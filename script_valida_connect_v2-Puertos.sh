@@ -1,4 +1,7 @@
 #!/bin/bash
+#Para utilizar este script se debe tener instalada la paquetería de netcat.
+# Debian
+# #apt-get install netcat
 #PUERTOS CON SUS SERVICIOS MÁS COMUNES
 #20:FTP-Data 	21:FTP 22:SSH	23:TELNET 	25:SMTP 	80:HTTP 
 #143:IMAP	161:SNMP 	443:HTTPS 	445:MS-DS	465:SMTPS
@@ -11,7 +14,7 @@
 #PORT	:		0 = Deshabilitado		1 = Habilitado
 #			INICIA DECLARACIÓN DE VARIABLES				#
 DEFAULT_PORTS=(20 21 23 25 80 143 161 443 445 465 1080 1433 3128 3306 8080)
-TIPO_COMUNICACION=0
+#TIPO_COMUNICACION=0
 #Se definen los valores del usuario (si especifican con getops)
 PORT="N"
 HOST="N"
